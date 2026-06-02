@@ -1,8 +1,11 @@
-/* Q21 leetcode: https://leetcode.com/problems/merge-two-sorted-lists/description/?envType=problem-list-v2&envId=linked-list
+/* 
+Q21 leetcode: https://leetcode.com/problems/merge-two-sorted-lists/description/?envType=problem-list-v2&envId=linked-list
 Input: list1 = [1,2,4], list2 = [1,3,4]
 Output: [1,1,2,3,4,4]
-dummy, tail node -> jab tak dono list me se koi null nhi ho jata tb tk((data compare kiya -> tail.next me add kiya) tai.next move kiya) -> jo bacha vo tail.next me add kiya -> dummy.next return kiya
-time: O(n1 + n2) space: O(1)*/
+dummy, tail node -> jab tak dono list me se koi null nhi ho jata tb tk((data compare kiya -> tail.next me add kiya) tai.next move kiya) 
+-> jo bacha vo tail.next me add kiya -> dummy.next return kiya
+time: O(n1 + n2) space: O(1)
+*/
 
 
 class Node{
