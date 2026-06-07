@@ -112,7 +112,7 @@ public class SinglyLinkedList{
         return false;
     }
     
-    //search - recursive (time = space = O(n))
+    //search - recursive (time: O(n), space: O(1))
     public static boolean searchIter(Node h, int k){
         if(h == null) return false;
         if(h.d == k) return true;
