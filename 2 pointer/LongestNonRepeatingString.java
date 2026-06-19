@@ -1,9 +1,15 @@
-/*
+/* Q3 leetcode: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+Input: s = "abcabcbb"
+Output: 3
 
-Brute force: hash array li 256 size ki phir jo char string me hai vo check kiya list me hai ki nhi agr hai to break nhi to use hash array me store kiya len calc ki j - i + 1 return maxLen
+Brute force: hash array li 256 size ki phir jo char string me hai vo check kiya list me hai ki nhi agr hai to break 
+nhi to use hash array me store kiya len calc ki j - i + 1 return maxLen
 Hash array- not hash table used for direct indexing jaise a ka ascii code 97 aur string me a aaya to 97 index pe 1 store karegi
 
-Optimal sol: pointer l and r -> current window [l, r] containing char without repetition, maxlen jab tk r < n hai array pe iterate karo check kiya if currect char has occured before hash array se. if yes so update kro left pointer to index of current char + 1 len calc ki r-l+1 update ki maxLen, hash array update ki wirh current index r -> indicating most recent occurrence of char at point r in the string. return maxlen 
+Optimal sol: pointer l and r -> current window [l, r] containing char without repetition, maxlen jab tk r < n hai array pe iterate 
+karo check kiya if currect char has occured before hash array se. if yes so update kro left pointer to index of current char + 1 len 
+calc ki r-l+1 update ki maxLen, hash array update ki wirh current index r -> indicating most recent occurrence of char at point r in the string. 
+return maxlen 
 */
 
 import java.util.*;
